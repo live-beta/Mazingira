@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Mazingira</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
     <script type="text/javascript">
       function envcalc(){
         var pol=Number(document.getElementById('pol').value);
@@ -12,21 +13,22 @@
         var sum= ((pol+food+cook+trans)/80)*100;
       document.getElementById('result').innerHTML = sum;
 
-
       }
     </script>
   </head>
   <body>
-    <div class="">
+    <div >
     <h2>Mazingira</h2>
-    <h3>Calculate Your Carbon Foot Print In a Specific Month Of 2016</h3>
+    <h3 class="header_title"> Calculate Your Carbon Foot Print In a Specific Month Of 2016</h3>
     </div>
-    <div class="">
-      <h4>Fill in the Form Below</h4>
+    <h4 class="sub_header_title">Fill in the Form Below</h4>
+    <div class="input_form">
+
     <form class="" action="index.html" method="post">
-      <input type="text" name="name" value="" placeholder="Enter Your Name" required="">
+      <label for="">Enter Your Name </label><input class="form_text_inputs" type="text" name="name" value="" placeholder="Enter Your Name" required="">
+<br>
       <label for="">Select Month</label>
-            <select class="" name="month">
+            <select class="form_select_inputs" name="month">
               <option value="January">January</option>
               <option value="February">February</option>
               <option value="March">March</option>
@@ -40,24 +42,24 @@
               <option value="November">November</option>
               <option value="January">December</option>
             </select>
-
-      <label for="">Esitmated Number of Polythene Bags Used</label> <input type="text" name="polybags" id="pol" value="" placeholder="Enter Number">
-      <label for="">Estmated Frequency of Processed Food</label> <input type="text" name="processed" id="food" value="" placeholder="Enter Number">
-      <label for="">Mode Of Transportation</label>
-            <select class="" name="means" id="trans">
+<br>
+      <label for="">Polythene Bags</label> <input class="form_text_inputs" type="text" name="polybags" id="pol" value="" placeholder="Estimated Number">
+    <br>  <label for="">Processed Food</label> <input class="form_text_inputs" type="text" name="processed" id="food" value="" placeholder="Estimated frequency">
+      <br> <label for="">Transportation</label>
+            <select class="form_select_inputs" name="means" id="trans">
               <option value="20">Flight</option>
               <option value="0">Walking</option>
               <option value="15">Car</option>
               <option value="0">Bicycle</option>
             </select>
-      <label for="">Means Of Cooking</label>
+      <br> <label for="">Means Of Cooking</label>
             <select class="" name="cooking" id="cook">
               <option value="10">Gas</option>
               <option value="25">Charcoal</option>
               <option value="20">Firewood</option>
               <option value="3">Electricity</option>
             </select>
-      <input type="submit" name="" value="" onclick="envcalc();  return false;">
+      <br> <input type="submit" name="" value="Calculate" onclick="envcalc();  return false;">
     </form>
     </div>
     <div class="" id="result">
