@@ -1,45 +1,83 @@
+
 html *
 {
-
    color: #000;
    font-family: 'Roboto';
     font-weight: 200;
 
+
 }
 form {
-  background-color: #f2f2f2;
+  background-color: #ceffae;
   width: 53%;
   height: 30%;
+  margin-top: -3%;
+  border: solid 1px;
+}
+.header_div{
+  margin-left: 35%;
+  margin-top: -4%;
+}
+.label {
+    background-color: #ceffae;
+  margin-left: 20%;
+  font-weight: 200;
+  font-style: normal;
 
 }
-label {
-  background-color: red;
-  margin-left: 20%;
-
+.main_title{
+  font-size: 70px;
+  font-weight: 350;
+  margin-left: 2%;
 }
 .header_title{
-  margin-left: 30%;
+  margin-left: 2%;
   font-size: 20px;
+  margin-top: -5.5%;
+
 }
 .sub_header_title{
 
-  margin-left: 40%;
+  margin-left: 13%;
+  margin-top: -1%;
 
 }
 .form_text_inputs{
-  width: 100px;
-  padding-top: 2px;
-  margin-left: 20%
-  display: 10%;
+  width: 50%;
+  height: 25px;
+  padding-top: 1px;
+  margin-left: 20%;
+  font-size: 18px;
+  display:block;
 
 }
 .form_select_inputs{
-  width:100px;
-  height:30px;
-  margin-left: 10%
+  width: 50%;
+  height:35px;
+  margin-left: 20%;
   display: block;
+  font-size: 18px;
 }
 .input_form{
-  margin-left: 30%;
 
+  width: 70%;
+
+}
+.res_box{
+  background-color: yellow;
+  width: 50%;
+  height: 50%;
+  margin-left: 45%;
+  margin-top: -25.5%;
+  font-size: 150px;
+
+}
+.form_submit_inputs{
+  width: 50%;
+  height: 25px;
+  border: 0px;
+  margin-left: 20%;
+  font-size: 18px;
+  display:block;
+  background-color: yellow;
 }
