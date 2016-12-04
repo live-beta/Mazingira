@@ -1,0 +1,45 @@
+html *
+{
+
+   color: #000;
+   font-family: 'Roboto';
+    font-weight: 200;
+
+}
+form {
+  background-color: #f2f2f2;
+  width: 53%;
+  height: 30%;
+
+}
+label {
+  background-color: red;
+  margin-left: 20%;
+
+}
+.header_title{
+  margin-left: 30%;
+  font-size: 20px;
+}
+.sub_header_title{
+
+  margin-left: 40%;
+
+}
+.form_text_inputs{
+  width: 100px;
+  padding-top: 2px;
+  margin-left: 20%
+  display: 10%;
+
+}
+.form_select_inputs{
+  width:100px;
+  height:30px;
+  margin-left: 10%
+  display: block;
+}
+.input_form{
+  margin-left: 30%;
+
+}
