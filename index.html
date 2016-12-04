@@ -11,8 +11,19 @@
         var food=Number(document.getElementById('food').value);
         var trans=Number(document.getElementById('trans').value);
         var cook=Number(document.getElementById('cook').value);
+        var username = document.getElementById("name").value;
+        var month = document.getElementById("month").value;
         var sum= ((pol+food+cook+trans)/80)*100;
-      document.getElementById('result').innerHTML = sum;
+        if (sum < 50) {
+          document.getElementById('person').innerHTML ='Hallo '+ username +' ! Your '+month +' is GREEN.You Scored ';
+          document.getElementById('result').innerHTML = sum;
+          document.getElementById('result').style.backgroundColor = "green";
+        }else {
+          document.getElementById('person').innerHTML ='Hallo '+ username +' ! Your '+month +' is Not GREEN. You Scored';
+          document.getElementById('result').innerHTML = sum;
+          document.getElementById('result').style.backgroundColor = "red";
+        }
+
 
       }
     </script>
@@ -22,18 +33,18 @@
 
     <div class="header_div">
     <h2 class="main_title" >Mazingira</h2>
-    <h3 class="header_title"> Calculate Your Carbon Foot Print In <br>&nbsp;&nbsp;&nbsp;&nbsp;a Specific Month Of 2016</h3>
+    <h3 class="header_title"> Calculate Your Carbon Foot Print For <br>&nbsp;&nbsp;&nbsp;&nbsp;a Specific Month Of 2016</h3>
     </div>
     <hr>
     <br>
     <div class="input_form">
 
     <form class="" action="index.html" method="post"><br>
-      <label class="label" for="">Your Name </label><input class="form_text_inputs" type="text" name="name" value="" placeholder="Enter Your Name" required="">
+      <label class="label" for="">Your Name </label><input id="name" class="form_text_inputs" type="text" name="name" value="" placeholder="Enter Your Name" required="">
 <br>
       <label class="label"for="">Select Month</label>
       <br>
-            <select class="form_select_inputs" name="month">
+            <select id="month" class="form_select_inputs" name="month">
               <option value="January">January</option>
               <option value="February">February</option>
               <option value="March">March</option>
@@ -66,11 +77,16 @@
               <option value="20">Firewood</option>
               <option value="3">Electricity</option>
             </select>
-      <br> <input class="form_submit_inputs" type="submit" name="" value="Calculate" onclick="envcalc();  return false;">
+      <br> <input class="form_submit_inputs" type="submit" name="" value="Calculate" onclick="envcalc(); return false;">
     </form>
+    </div>
+    <div class="live_screen">
+    <div class="person" id="person">
+
     </div>
     <div class="res_box" id="result">
       result Box
+    </div>
     </div>
   </body>
 </html>
